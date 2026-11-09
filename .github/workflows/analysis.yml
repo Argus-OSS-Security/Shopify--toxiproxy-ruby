@@ -2,14 +2,15 @@
 
 name: Analysis
 
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
-  schedule:
-    - cron: 13 7 * * 6
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     branches: [ main ]
+#   pull_request:
+#     branches: [ main ]
+#   schedule:
+#     - cron: 13 7 * * 6
+# 
 jobs:
   linting:
     runs-on: ubuntu-latest

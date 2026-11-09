@@ -2,10 +2,11 @@
 
 name: Pre release
 
-on:
-  push:
-    tags: [ v*.*.* ]
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   push:
+#     tags: [ v*.*.* ]
+# 
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}

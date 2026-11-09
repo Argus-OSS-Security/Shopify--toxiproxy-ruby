@@ -2,12 +2,13 @@
 
 name: Contributor License Agreement (CLA)
 
-on:
-  pull_request_target:
-    types: [opened, synchronize]
-  issue_comment:
-    types: [created]
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   pull_request_target:
+#     types: [opened, synchronize]
+#   issue_comment:
+#     types: [created]
+# 
 jobs:
   cla:
     permissions:
